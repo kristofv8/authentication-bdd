@@ -98,8 +98,3 @@ class BasePage:
     def click_save(self):
         self.driver.find_element_by_name('_save').click()
 
-
-class ConsignmentMixinPage:
-    def try_to_find_complimentary_id_on_tnt_not_registered_consignments(self, first_order_id):
-        conref_id = self.driver.find_element_by_link_text(first_order_id)
-        conref_id.click()
