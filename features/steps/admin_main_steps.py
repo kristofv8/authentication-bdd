@@ -18,18 +18,6 @@ def verify_user_should_open_all_pages(context, URL_NAME):
         print('f{app_url}')
 
 
-@step("user clicks on the invoices link")
-def click_invoices_link(context):
-    page = AdminMainPage(context)
-    page.click_invoices_link()
-
-
-@step("user clicks on the to be shipped link")
-def click_to_be_shipped_link(context):
-    page = AdminMainPage(context)
-    page.click_to_be_shipped_link()
-
-
 @step("user clicks on the logout link")
 def click_logout_link(context):
     page = AdminMainPage(context)
